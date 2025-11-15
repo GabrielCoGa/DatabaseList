@@ -24,5 +24,7 @@ def mark_book_as_read(name):
  Esto esta considerado una mala tractica porque la lista queda inconsistente           
  """
 def delete_book(name):
-    global books
+    global books #Estamos haciendo referencia a la lista books de inicio que es global, 
+                 #esto es por el ambito(scope) de las variables, que dentro de la funcion
+                 #serian si no locales
     books = [book for book in books if book['name'] != name]
