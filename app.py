@@ -13,4 +13,16 @@ Your choice:"""
 def menu():
     user_input = input(USER_CHOICEÇ)
     while user_input != 'q':
-        pass
+        if user_input == 'a':
+            pass
+        elif user_input == 'l':
+            pass
+        elif user_input == 'r':
+            pass
+        elif user_input == 'd':
+            pass
+        else:
+            print("Unknow commad. Please try again.")
+
+        
+
