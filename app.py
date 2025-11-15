@@ -13,7 +13,7 @@ _ 'd' to delete a book
 Your choice:"""
 
 def menu():
-    user_input = input(USER_CHOICEaa)
+    user_input = input(USER_CHOICE)
     while user_input != 'q':
         if user_input == 'a':
             prompt_add_book()
@@ -33,5 +33,15 @@ def prompt_add_book():
     author = input('Enter the new book author: ')
 
     add_book(name, author)
+
+def list_books():
+    books_return = get_all_books()
+    for book_return in books_return:
+        print("author {} with title {} read {}".format(book_return["author"], book_return["name"], book_return["read"]))
+
+#print(book_return)
+
+
+
 
 menu()
