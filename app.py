@@ -42,7 +42,7 @@ def list_books():
         print("author {} with title {} read {}".format(book_return["author"], book_return["name"], read))
 
 
-def prompt_read_book():
+def promt_read_book():
     name = input('Enter the name of de book you just finished reading: ')
     
     mark_book_as_read(name)
