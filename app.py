@@ -34,14 +34,26 @@ def prompt_add_book():
 
     add_book(name, author)
 
+
 def list_books():
     books_return = get_all_books()
     for book_return in books_return:
         print("author {} with title {} read {}".format(book_return["author"], book_return["name"], book_return["read"]))
 
-#print(book_return)
+    #print(book_return)
 
 
+def prompt_read_book():
+    name = input('Enter the name of de book you just finished reading: ')
+    
+    mark_book_as_read(name)
 
 
+def prompt_delete_book():
+    name = input('Enter the name of the book you wish to delete: ')
+
+    delete_book(name)
+
+
+#iniciamos la app
 menu()
