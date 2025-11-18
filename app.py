@@ -41,8 +41,6 @@ def list_books():
         read = 'YES' if book_return['read'] else 'NO'
         print("author {} with title {} read {}".format(book_return["author"], book_return["name"], read))
 
-    #print(book_return)
-
 
 def prompt_read_book():
     name = input('Enter the name of de book you just finished reading: ')
