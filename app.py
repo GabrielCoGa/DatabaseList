@@ -20,7 +20,7 @@ def menu():
         elif user_input == 'l':
             list_books()
         elif user_input == 'r':
-            promt_read_book()
+            prompt_read_book()
         elif user_input == 'd':
             prompt_delete_book()
         else:
@@ -39,7 +39,7 @@ def list_books():
     books_return = get_all_books()
     for book_return in books_return:
         read = 'YES' if book_return['read'] else 'NO'
-        print("author {} with title {} read {}".format(book_return["author"], book_return["name"], book_return["read"]))
+        print("author {} with title {} read {}".format(book_return["author"], book_return["name"], read))
 
     #print(book_return)
 
