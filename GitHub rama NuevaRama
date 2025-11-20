@@ -1,0 +1,4 @@
+Este proyecto esta con la rama NuevaRama
+hay que cambiar a ella, o fusionarla con la principal y eliminarla
+git checkout NuevaRama   
+git push origin NuevaRama                                                          
